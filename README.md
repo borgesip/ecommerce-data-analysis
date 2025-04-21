@@ -14,7 +14,11 @@ Este projeto analisa dados de vendas de uma loja online fictícia (`OnlineRetail
 - `sql/`: Scripts SQL para criar tabelas.
 - `notebooks/`: Notebooks para ETL (`01_etl_pipeline.ipynb`), RFM (`02_rfm_analysis.ipynb`), e Cohort (`03_cohort_analysis.ipynb`).
 - `visualizations/`: Gráficos gerados.
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 49833d92235acd032dacc4e95ceac9167c2d74a2
 ## Resultados
 ### Análise RFM
 - **Distribuição dos Segmentos**:
