@@ -147,7 +147,8 @@ fig_top_quantity = px.bar(
     orientation='h',
     title='Top 10 Produtos por Quantidade Vendida',
     labels={'x': 'Quantidade Vendida', 'y': 'Produto'},
-    color_discrete_sequence=['#636EFA']
+    color_discrete_sequence=['#636EFA'],
+    category_orders={'y': top_products_quantity.index.tolist()}  # Enforce the order from the sorted data
 )
 st.plotly_chart(fig_top_quantity, use_container_width=True)
 
@@ -158,7 +159,8 @@ fig_top_revenue = px.bar(
     orientation='h',
     title='Top 10 Produtos por Receita',
     labels={'x': 'Receita Total', 'y': 'Produto'},
-    color_discrete_sequence=['#EF553B']
+    color_discrete_sequence=['#EF553B'],
+    category_orders={'y': top_products_revenue.index.tolist()}  # Enforce the order from the sorted data
 )
 st.plotly_chart(fig_top_revenue, use_container_width=True)
 
@@ -188,7 +190,8 @@ fig_country_sales = px.bar(
     orientation='h',
     title='Top 10 Países por Receita',
     labels={'x': 'Receita Total', 'y': 'País'},
-    color_discrete_sequence=['#00CC96']
+    color_discrete_sequence=['#00CC96'],
+    category_orders={'y': country_sales.index.tolist()}  # Enforce the order from the sorted data
 )
 st.plotly_chart(fig_country_sales, use_container_width=True)
 
@@ -199,7 +202,8 @@ fig_country_customers = px.bar(
     orientation='h',
     title='Top 10 Países por Número de Clientes',
     labels={'x': 'Número de Clientes', 'y': 'País'},
-    color_discrete_sequence=['#AB63FA']
+    color_discrete_sequence=['#AB63FA'],
+    category_orders={'y': country_customers.index.tolist()}  # Enforce the order from the sorted data
 )
 st.plotly_chart(fig_country_customers, use_container_width=True)
 
@@ -208,7 +212,7 @@ st.header("Insights e Recomendações")
 st.markdown("""
 - **RFM**: Os 'Campeões' (20.5% dos clientes) geram 48.3% da receita. Implemente um programa de fidelidade para mantê-los engajados.
 - **Cohort**: A retenção cai significativamente após o primeiro mês (e.g., 37% para o cohort de 2010-12). Introduza e-mails de onboarding para novos clientes.
-- **Produtos**: Identifique os produtos mais vendidos para promoções direcionadas (e.g., os top 10 por quantidade e receita).
+- **Produtos**: Identificar os produtos mais vendidos para promoções direcionadas (e.g., os top 10 por quantidade e receita).
 - **Vendas**: Picos sazonais (e.g., dezembro) sugerem campanhas de Natal para aumentar a receita.
-- **Países**: A maioria das vendas vem de poucos países (e.g., Reino Unido). Considere estratégias de marketing para expandir em outros mercados.
+- **Países**: A maioria das vendas vem de poucos países (e.g., Reino Unido). Considerar estratégias de marketing para expandir em outros mercados.
 """)
