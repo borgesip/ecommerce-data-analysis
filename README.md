@@ -79,7 +79,7 @@ O dashboard interativo inclui:
 ![Cohort Retention](visualizations/cohort_heatmap.png)
 
 ## Dashboard Interativo
-*(Link a ser adicionado após deploy no Streamlit Community Cloud)*
+*https://ecommerce-data-analysis-borgesip.streamlit.app/*
 
 ## Insights e Recomendações
 - **RFM**:
