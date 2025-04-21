@@ -1,4 +1,4 @@
-# scripts/dashboard_cloud.py
+# dashboards/dashboard_cloud.py
 import streamlit as st
 import pandas as pd
 import numpy as np
