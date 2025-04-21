@@ -14,34 +14,7 @@ Este projeto analisa dados de vendas de uma loja online fictícia (`OnlineRetail
 - `sql/`: Scripts SQL para criar tabelas.
 - `notebooks/`: Notebooks para ETL (`01_etl_pipeline.ipynb`), RFM (`02_rfm_analysis.ipynb`), e Cohort (`03_cohort_analysis.ipynb`).
 - `visualizations/`: Gráficos gerados.
-
-## Como Executar
-1. Clone o repositório:
-git clone https://github.com/seu_usuario/ecommerce-data-analysis.git
-
-2. Crie um ambiente virtual e instale dependências:
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-pip install -r requirements.txt
-
-3. Configure o banco de dados:
-- Crie um banco `ecommerce_data` no PostgreSQL.
-- Execute `sql/create_tables.sql` para criar a tabela `sales`.
-
-4. Configure o arquivo `.env`:
-DATABASE_URL=postgresql://postgres:sua_senha@localhost:5432/ecommerce_data
-
-5. Execute o pipeline ETL:
-jupyter notebook notebooks/01_etl_pipeline.ipynb
-
-6. Realize as análises:
-- RFM: `notebooks/02_rfm_analysis.ipynb`
-- Cohort: `notebooks/03_cohort_analysis.ipynb`
-
-7. Inicie o dashboard:
-streamlit run scripts/dashboard.py
-
+- 
 ## Resultados
 ### Análise RFM
 - **Distribuição dos Segmentos**:
